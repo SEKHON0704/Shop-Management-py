@@ -1,0 +1,10 @@
+from db import customers_data
+
+class Customer:
+    @staticmethod
+    def add_customer():
+        name = input("Enter customer name: ")
+        phone = input("Enter customer phone number: ")
+        customer = {"name": name, "phone": phone}
+        customers_data.append(customer)
+        print(f"Customer {name} added successfully.")
